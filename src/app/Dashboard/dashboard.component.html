@@ -1,0 +1,64 @@
+<!-- <div class="container" style="background: #A4C4E8">
+	<h3>groups</h3>
+</div>
+ -->
+<table class="table">  
+	<thead>
+	    <tr>
+	      <th scope="col">Group</th>
+	      <th scope="col">Total</th>
+	      <th scope="col">Coverage</th>
+	      <th scope="col">Owner</th>
+	    </tr>
+  	</thead>
+	<tbody>
+		<tr *ngFor="let group of storyMap.groups">
+			<td>
+				{{group.name}}
+			</td>
+			<td>
+				{{group.total}}
+			</td>
+      <td>
+        {{group.coverage}}
+      </td>
+      <td>
+        {{group.owner}}
+      </td>
+		</tr>
+	</tbody>
+</table>
+<!-- 
+<ul>
+	<li *ngFor="let group of storyMap | keyvalue">{{group.key}}</li>
+</ul>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table> -->
